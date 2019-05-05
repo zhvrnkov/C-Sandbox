@@ -7,9 +7,15 @@
 //
 
 #include <stdio.h>
+#include "grabline/grabline.h"
+#include "entab/entab.h"
+#define MAXLINE 1000
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    int len;
+    char line[MAXLINE];
+    
+    while ((len = grabline(line, MAXLINE)) > 0) {
+        printf("%s\n", entab(line));
+    }
 }

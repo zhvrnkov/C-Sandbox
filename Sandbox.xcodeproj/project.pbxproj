@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CA41506221F4E7260037E3F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506121F4E7260037E3F5 /* main.c */; };
+		CA41506A21F4E7720037E3F5 /* detab.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506921F4E7720037E3F5 /* detab.c */; };
+		CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */; };
+		CACA2FB1226D1399004AC791 /* grabline.c in Sources */ = {isa = PBXBuildFile; fileRef = CACA2FB0226D1399004AC791 /* grabline.c */; };
+		CAED7761227F125000EE9D0B /* entab.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7760227F125000EE9D0B /* entab.c */; };
+		CAF1248022761AFD00405274 /* arrayReduce.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF1247F22761AFD00405274 /* arrayReduce.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		CA41505E21F4E7260037E3F5 /* Sandbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sandbox; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA41506121F4E7260037E3F5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CA41506821F4E7720037E3F5 /* detab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detab.h; sourceTree = "<group>"; };
+		CA41506921F4E7720037E3F5 /* detab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = detab.c; sourceTree = "<group>"; };
+		CA41506B21F4F2C10037E3F5 /* arraymanipulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arraymanipulation.h; sourceTree = "<group>"; };
+		CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arraymanipulation.c; sourceTree = "<group>"; };
+		CACA2FAF226D1399004AC791 /* grabline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grabline.h; sourceTree = "<group>"; };
+		CACA2FB0226D1399004AC791 /* grabline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grabline.c; sourceTree = "<group>"; };
+		CAED775F227F125000EE9D0B /* entab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entab.h; sourceTree = "<group>"; };
+		CAED7760227F125000EE9D0B /* entab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entab.c; sourceTree = "<group>"; };
+		CAF1247E22761AFD00405274 /* arrayReduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayReduce.h; sourceTree = "<group>"; };
+		CAF1247F22761AFD00405274 /* arrayReduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrayReduce.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +72,59 @@
 		CA41506021F4E7260037E3F5 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				CAED775E227F124000EE9D0B /* entab */,
+				CAF1247D22761AF100405274 /* ArrayReduce */,
+				CACA2FAE226D138F004AC791 /* grabline */,
 				CA41506121F4E7260037E3F5 /* main.c */,
+				CACA2FAD226D1370004AC791 /* detab */,
+				CACA2FAC226D1362004AC791 /* arraymanipulation */,
 			);
 			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		CACA2FAC226D1362004AC791 /* arraymanipulation */ = {
+			isa = PBXGroup;
+			children = (
+				CA41506B21F4F2C10037E3F5 /* arraymanipulation.h */,
+				CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */,
+			);
+			path = arraymanipulation;
+			sourceTree = "<group>";
+		};
+		CACA2FAD226D1370004AC791 /* detab */ = {
+			isa = PBXGroup;
+			children = (
+				CA41506821F4E7720037E3F5 /* detab.h */,
+				CA41506921F4E7720037E3F5 /* detab.c */,
+			);
+			path = detab;
+			sourceTree = "<group>";
+		};
+		CACA2FAE226D138F004AC791 /* grabline */ = {
+			isa = PBXGroup;
+			children = (
+				CACA2FAF226D1399004AC791 /* grabline.h */,
+				CACA2FB0226D1399004AC791 /* grabline.c */,
+			);
+			path = grabline;
+			sourceTree = "<group>";
+		};
+		CAED775E227F124000EE9D0B /* entab */ = {
+			isa = PBXGroup;
+			children = (
+				CAED775F227F125000EE9D0B /* entab.h */,
+				CAED7760227F125000EE9D0B /* entab.c */,
+			);
+			path = entab;
+			sourceTree = "<group>";
+		};
+		CAF1247D22761AF100405274 /* ArrayReduce */ = {
+			isa = PBXGroup;
+			children = (
+				CAF1247E22761AFD00405274 /* arrayReduce.h */,
+				CAF1247F22761AFD00405274 /* arrayReduce.c */,
+			);
+			path = ArrayReduce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAED7761227F125000EE9D0B /* entab.c in Sources */,
+				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
+				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,
+				CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */,
+				CAF1248022761AFD00405274 /* arrayReduce.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
