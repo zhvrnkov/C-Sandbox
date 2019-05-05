@@ -8,7 +8,8 @@
 
 #include <stdio.h>
 #include "grabline/grabline.h"
-#include "entab/entab.h"
+#include "LineFolder/foldLine.h"
+#include "CommentsCleaner/cleanComments.h"
 #define MAXLINE 1000
 
 int main(int argc, const char * argv[]) {
@@ -16,6 +17,6 @@ int main(int argc, const char * argv[]) {
     char line[MAXLINE];
     
     while ((len = grabline(line, MAXLINE)) > 0) {
-        printf("%s\n", entab(line));
+        printf("%s", cleanComments(line));
     }
 }

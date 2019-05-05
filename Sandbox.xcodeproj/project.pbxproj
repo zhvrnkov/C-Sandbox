@@ -12,6 +12,9 @@
 		CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */; };
 		CACA2FB1226D1399004AC791 /* grabline.c in Sources */ = {isa = PBXBuildFile; fileRef = CACA2FB0226D1399004AC791 /* grabline.c */; };
 		CAED7761227F125000EE9D0B /* entab.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7760227F125000EE9D0B /* entab.c */; };
+		CAED7765227F5CA200EE9D0B /* foldLine.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7764227F5CA200EE9D0B /* foldLine.c */; };
+		CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */; };
+		CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED776C227F63EC00EE9D0B /* cleanComments.c */; };
 		CAF1248022761AFD00405274 /* arrayReduce.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF1247F22761AFD00405274 /* arrayReduce.c */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,12 @@
 		CACA2FB0226D1399004AC791 /* grabline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grabline.c; sourceTree = "<group>"; };
 		CAED775F227F125000EE9D0B /* entab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entab.h; sourceTree = "<group>"; };
 		CAED7760227F125000EE9D0B /* entab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entab.c; sourceTree = "<group>"; };
+		CAED7763227F5CA200EE9D0B /* foldLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foldLine.h; sourceTree = "<group>"; };
+		CAED7764227F5CA200EE9D0B /* foldLine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = foldLine.c; sourceTree = "<group>"; };
+		CAED7767227F5F4B00EE9D0B /* nonBlankChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nonBlankChar.h; sourceTree = "<group>"; };
+		CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nonBlankChar.c; sourceTree = "<group>"; };
+		CAED776B227F63EC00EE9D0B /* cleanComments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cleanComments.h; sourceTree = "<group>"; };
+		CAED776C227F63EC00EE9D0B /* cleanComments.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cleanComments.c; sourceTree = "<group>"; };
 		CAF1247E22761AFD00405274 /* arrayReduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayReduce.h; sourceTree = "<group>"; };
 		CAF1247F22761AFD00405274 /* arrayReduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrayReduce.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +81,9 @@
 		CA41506021F4E7260037E3F5 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				CAED776A227F63D900EE9D0B /* CommentsCleaner */,
+				CAED7766227F5F2B00EE9D0B /* NotEmptyChar */,
+				CAED7762227F5C9100EE9D0B /* LineFolder */,
 				CAED775E227F124000EE9D0B /* entab */,
 				CAF1247D22761AF100405274 /* ArrayReduce */,
 				CACA2FAE226D138F004AC791 /* grabline */,
@@ -116,6 +128,33 @@
 				CAED7760227F125000EE9D0B /* entab.c */,
 			);
 			path = entab;
+			sourceTree = "<group>";
+		};
+		CAED7762227F5C9100EE9D0B /* LineFolder */ = {
+			isa = PBXGroup;
+			children = (
+				CAED7763227F5CA200EE9D0B /* foldLine.h */,
+				CAED7764227F5CA200EE9D0B /* foldLine.c */,
+			);
+			path = LineFolder;
+			sourceTree = "<group>";
+		};
+		CAED7766227F5F2B00EE9D0B /* NotEmptyChar */ = {
+			isa = PBXGroup;
+			children = (
+				CAED7767227F5F4B00EE9D0B /* nonBlankChar.h */,
+				CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */,
+			);
+			path = NotEmptyChar;
+			sourceTree = "<group>";
+		};
+		CAED776A227F63D900EE9D0B /* CommentsCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				CAED776B227F63EC00EE9D0B /* cleanComments.h */,
+				CAED776C227F63EC00EE9D0B /* cleanComments.c */,
+			);
+			path = CommentsCleaner;
 			sourceTree = "<group>";
 		};
 		CAF1247D22761AF100405274 /* ArrayReduce */ = {
@@ -183,12 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */,
 				CAED7761227F125000EE9D0B /* entab.c in Sources */,
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
 				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,
+				CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */,
 				CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */,
 				CAF1248022761AFD00405274 /* arrayReduce.c in Sources */,
+				CAED7765227F5CA200EE9D0B /* foldLine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
