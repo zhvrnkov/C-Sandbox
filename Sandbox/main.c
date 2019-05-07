@@ -7,16 +7,10 @@
 //
 
 #include <stdio.h>
-#include "grabline/grabline.h"
-#include "LineFolder/foldLine.h"
-#include "CommentsCleaner/cleanComments.h"
+#include <limits.h>
+#include "htoi/htoi.h"
 #define MAXLINE 1000
 
 int main(int argc, const char * argv[]) {
-    int len;
-    char line[MAXLINE];
-    
-    while ((len = grabline(line, MAXLINE)) > 0) {
-        printf("%s", cleanComments(line));
-    }
+    printf("%d\n", htoi("0xFFffff") == 16777215);
 }

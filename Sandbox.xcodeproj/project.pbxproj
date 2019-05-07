@@ -16,6 +16,8 @@
 		CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */; };
 		CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED776C227F63EC00EE9D0B /* cleanComments.c */; };
 		CAF1248022761AFD00405274 /* arrayReduce.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF1247F22761AFD00405274 /* arrayReduce.c */; };
+		CAF54BAB22809E3000320193 /* typeRange.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAA22809E3000320193 /* typeRange.c */; };
+		CAF54BAF2281EB7100320193 /* htoi.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAE2281EB7100320193 /* htoi.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,10 @@
 		CAED776C227F63EC00EE9D0B /* cleanComments.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cleanComments.c; sourceTree = "<group>"; };
 		CAF1247E22761AFD00405274 /* arrayReduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayReduce.h; sourceTree = "<group>"; };
 		CAF1247F22761AFD00405274 /* arrayReduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrayReduce.c; sourceTree = "<group>"; };
+		CAF54BA922809E3000320193 /* typeRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typeRange.h; sourceTree = "<group>"; };
+		CAF54BAA22809E3000320193 /* typeRange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = typeRange.c; sourceTree = "<group>"; };
+		CAF54BAD2281EB7100320193 /* htoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = htoi.h; sourceTree = "<group>"; };
+		CAF54BAE2281EB7100320193 /* htoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = htoi.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 		CA41506021F4E7260037E3F5 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				CAF54BAC2281EB6600320193 /* htoi */,
+				CAF54BA822809E0C00320193 /* TypeRange */,
+				CAED776E227F6C8500EE9D0B /* ReadFile */,
 				CAED776A227F63D900EE9D0B /* CommentsCleaner */,
 				CAED7766227F5F2B00EE9D0B /* NotEmptyChar */,
 				CAED7762227F5C9100EE9D0B /* LineFolder */,
@@ -157,6 +166,13 @@
 			path = CommentsCleaner;
 			sourceTree = "<group>";
 		};
+		CAED776E227F6C8500EE9D0B /* ReadFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReadFile;
+			sourceTree = "<group>";
+		};
 		CAF1247D22761AF100405274 /* ArrayReduce */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +180,24 @@
 				CAF1247F22761AFD00405274 /* arrayReduce.c */,
 			);
 			path = ArrayReduce;
+			sourceTree = "<group>";
+		};
+		CAF54BA822809E0C00320193 /* TypeRange */ = {
+			isa = PBXGroup;
+			children = (
+				CAF54BA922809E3000320193 /* typeRange.h */,
+				CAF54BAA22809E3000320193 /* typeRange.c */,
+			);
+			path = TypeRange;
+			sourceTree = "<group>";
+		};
+		CAF54BAC2281EB6600320193 /* htoi */ = {
+			isa = PBXGroup;
+			children = (
+				CAF54BAD2281EB7100320193 /* htoi.h */,
+				CAF54BAE2281EB7100320193 /* htoi.c */,
+			);
+			path = htoi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */,
+				CAF54BAB22809E3000320193 /* typeRange.c in Sources */,
 				CAED7761227F125000EE9D0B /* entab.c in Sources */,
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
+				CAF54BAF2281EB7100320193 /* htoi.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
 				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,
 				CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */,
