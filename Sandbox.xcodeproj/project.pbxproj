@@ -18,6 +18,8 @@
 		CAF1248022761AFD00405274 /* arrayReduce.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF1247F22761AFD00405274 /* arrayReduce.c */; };
 		CAF54BAB22809E3000320193 /* typeRange.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAA22809E3000320193 /* typeRange.c */; };
 		CAF54BAF2281EB7100320193 /* htoi.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAE2281EB7100320193 /* htoi.c */; };
+		CAF54BB32282160A00320193 /* deleeze.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BB22282160A00320193 /* deleeze.c */; };
+		CAF54BB722821B3100320193 /* any.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BB622821B3100320193 /* any.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,10 @@
 		CAF54BAA22809E3000320193 /* typeRange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = typeRange.c; sourceTree = "<group>"; };
 		CAF54BAD2281EB7100320193 /* htoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = htoi.h; sourceTree = "<group>"; };
 		CAF54BAE2281EB7100320193 /* htoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = htoi.c; sourceTree = "<group>"; };
+		CAF54BB12282160A00320193 /* deleeze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleeze.h; sourceTree = "<group>"; };
+		CAF54BB22282160A00320193 /* deleeze.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = deleeze.c; sourceTree = "<group>"; };
+		CAF54BB522821B3100320193 /* any.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = any.h; sourceTree = "<group>"; };
+		CAF54BB622821B3100320193 /* any.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = any.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 		CA41506021F4E7260037E3F5 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				CAF54BB422821B2A00320193 /* any */,
+				CAF54BB0228215F800320193 /* deleeze */,
 				CAF54BAC2281EB6600320193 /* htoi */,
 				CAF54BA822809E0C00320193 /* TypeRange */,
 				CAED776E227F6C8500EE9D0B /* ReadFile */,
@@ -200,6 +208,24 @@
 			path = htoi;
 			sourceTree = "<group>";
 		};
+		CAF54BB0228215F800320193 /* deleeze */ = {
+			isa = PBXGroup;
+			children = (
+				CAF54BB12282160A00320193 /* deleeze.h */,
+				CAF54BB22282160A00320193 /* deleeze.c */,
+			);
+			path = deleeze;
+			sourceTree = "<group>";
+		};
+		CAF54BB422821B2A00320193 /* any */ = {
+			isa = PBXGroup;
+			children = (
+				CAF54BB522821B3100320193 /* any.h */,
+				CAF54BB622821B3100320193 /* any.c */,
+			);
+			path = any;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +286,8 @@
 				CAF54BAB22809E3000320193 /* typeRange.c in Sources */,
 				CAED7761227F125000EE9D0B /* entab.c in Sources */,
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
+				CAF54BB722821B3100320193 /* any.c in Sources */,
+				CAF54BB32282160A00320193 /* deleeze.c in Sources */,
 				CAF54BAF2281EB7100320193 /* htoi.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
 				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,

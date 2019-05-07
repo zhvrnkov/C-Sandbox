@@ -8,9 +8,12 @@
 
 #include <stdio.h>
 #include <limits.h>
-#include "htoi/htoi.h"
+#include "any/any.h"
 #define MAXLINE 1000
 
 int main(int argc, const char * argv[]) {
-    printf("%d\n", htoi("0xFFffff") == 16777215);
+    char s1[] = "ABCD";
+    char s2[] = "AC";
+    
+    printf("%d\n", any(s1, s2));
 }
