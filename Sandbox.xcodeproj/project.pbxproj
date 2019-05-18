@@ -11,12 +11,15 @@
 		CA41506A21F4E7720037E3F5 /* detab.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506921F4E7720037E3F5 /* detab.c */; };
 		CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */; };
 		CACA2FB1226D1399004AC791 /* grabline.c in Sources */ = {isa = PBXBuildFile; fileRef = CACA2FB0226D1399004AC791 /* grabline.c */; };
+		CAECAEDC228B4ABB00D2E901 /* setbits.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDB228B4ABB00D2E901 /* setbits.c */; };
+		CAECAEDF228B4E5700D2E901 /* invert.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDE228B4E5700D2E901 /* invert.c */; };
+		CAECAEE2228C5C5300D2E901 /* bitcount.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEE1228C5C5300D2E901 /* bitcount.c */; };
+		CAECAEE6228C5F9A00D2E901 /* lower.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEE5228C5F9A00D2E901 /* lower.c */; };
+		CAECAEEB228C64C800D2E901 /* binsearch.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEEA228C64C800D2E901 /* binsearch.c */; };
 		CAED7761227F125000EE9D0B /* entab.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7760227F125000EE9D0B /* entab.c */; };
 		CAED7765227F5CA200EE9D0B /* foldLine.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7764227F5CA200EE9D0B /* foldLine.c */; };
-		CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */; };
 		CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */ = {isa = PBXBuildFile; fileRef = CAED776C227F63EC00EE9D0B /* cleanComments.c */; };
 		CAF1248022761AFD00405274 /* arrayReduce.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF1247F22761AFD00405274 /* arrayReduce.c */; };
-		CAF54BAB22809E3000320193 /* typeRange.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAA22809E3000320193 /* typeRange.c */; };
 		CAF54BAF2281EB7100320193 /* htoi.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BAE2281EB7100320193 /* htoi.c */; };
 		CAF54BB32282160A00320193 /* deleeze.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BB22282160A00320193 /* deleeze.c */; };
 		CAF54BB722821B3100320193 /* any.c in Sources */ = {isa = PBXBuildFile; fileRef = CAF54BB622821B3100320193 /* any.c */; };
@@ -43,18 +46,24 @@
 		CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arraymanipulation.c; sourceTree = "<group>"; };
 		CACA2FAF226D1399004AC791 /* grabline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grabline.h; sourceTree = "<group>"; };
 		CACA2FB0226D1399004AC791 /* grabline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grabline.c; sourceTree = "<group>"; };
+		CAECAEDA228B4ABB00D2E901 /* setbits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setbits.h; sourceTree = "<group>"; };
+		CAECAEDB228B4ABB00D2E901 /* setbits.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = setbits.c; sourceTree = "<group>"; };
+		CAECAEDD228B4E5700D2E901 /* invert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = invert.h; sourceTree = "<group>"; };
+		CAECAEDE228B4E5700D2E901 /* invert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = invert.c; sourceTree = "<group>"; };
+		CAECAEE0228C5C5300D2E901 /* bitcount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitcount.h; sourceTree = "<group>"; };
+		CAECAEE1228C5C5300D2E901 /* bitcount.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitcount.c; sourceTree = "<group>"; };
+		CAECAEE4228C5F9A00D2E901 /* lower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lower.h; sourceTree = "<group>"; };
+		CAECAEE5228C5F9A00D2E901 /* lower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lower.c; sourceTree = "<group>"; };
+		CAECAEE9228C64C800D2E901 /* binsearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binsearch.h; sourceTree = "<group>"; };
+		CAECAEEA228C64C800D2E901 /* binsearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = binsearch.c; sourceTree = "<group>"; };
 		CAED775F227F125000EE9D0B /* entab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entab.h; sourceTree = "<group>"; };
 		CAED7760227F125000EE9D0B /* entab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entab.c; sourceTree = "<group>"; };
 		CAED7763227F5CA200EE9D0B /* foldLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foldLine.h; sourceTree = "<group>"; };
 		CAED7764227F5CA200EE9D0B /* foldLine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = foldLine.c; sourceTree = "<group>"; };
-		CAED7767227F5F4B00EE9D0B /* nonBlankChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nonBlankChar.h; sourceTree = "<group>"; };
-		CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nonBlankChar.c; sourceTree = "<group>"; };
 		CAED776B227F63EC00EE9D0B /* cleanComments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cleanComments.h; sourceTree = "<group>"; };
 		CAED776C227F63EC00EE9D0B /* cleanComments.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cleanComments.c; sourceTree = "<group>"; };
 		CAF1247E22761AFD00405274 /* arrayReduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayReduce.h; sourceTree = "<group>"; };
 		CAF1247F22761AFD00405274 /* arrayReduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrayReduce.c; sourceTree = "<group>"; };
-		CAF54BA922809E3000320193 /* typeRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typeRange.h; sourceTree = "<group>"; };
-		CAF54BAA22809E3000320193 /* typeRange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = typeRange.c; sourceTree = "<group>"; };
 		CAF54BAD2281EB7100320193 /* htoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = htoi.h; sourceTree = "<group>"; };
 		CAF54BAE2281EB7100320193 /* htoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = htoi.c; sourceTree = "<group>"; };
 		CAF54BB12282160A00320193 /* deleeze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleeze.h; sourceTree = "<group>"; };
@@ -93,20 +102,10 @@
 		CA41506021F4E7260037E3F5 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				CAF54BB422821B2A00320193 /* any */,
-				CAF54BB0228215F800320193 /* deleeze */,
-				CAF54BAC2281EB6600320193 /* htoi */,
-				CAF54BA822809E0C00320193 /* TypeRange */,
-				CAED776E227F6C8500EE9D0B /* ReadFile */,
-				CAED776A227F63D900EE9D0B /* CommentsCleaner */,
-				CAED7766227F5F2B00EE9D0B /* NotEmptyChar */,
-				CAED7762227F5C9100EE9D0B /* LineFolder */,
-				CAED775E227F124000EE9D0B /* entab */,
-				CAF1247D22761AF100405274 /* ArrayReduce */,
-				CACA2FAE226D138F004AC791 /* grabline */,
+				CAECAEE7228C643800D2E901 /* array */,
+				CAECAEE3228C5F9100D2E901 /* strings */,
+				CAECAED9228B4AB000D2E901 /* bits */,
 				CA41506121F4E7260037E3F5 /* main.c */,
-				CACA2FAD226D1370004AC791 /* detab */,
-				CACA2FAC226D1362004AC791 /* arraymanipulation */,
 			);
 			path = Sandbox;
 			sourceTree = "<group>";
@@ -138,6 +137,55 @@
 			path = grabline;
 			sourceTree = "<group>";
 		};
+		CAECAED9228B4AB000D2E901 /* bits */ = {
+			isa = PBXGroup;
+			children = (
+				CAECAEDA228B4ABB00D2E901 /* setbits.h */,
+				CAECAEDB228B4ABB00D2E901 /* setbits.c */,
+				CAECAEDD228B4E5700D2E901 /* invert.h */,
+				CAECAEDE228B4E5700D2E901 /* invert.c */,
+				CAECAEE0228C5C5300D2E901 /* bitcount.h */,
+				CAECAEE1228C5C5300D2E901 /* bitcount.c */,
+			);
+			path = bits;
+			sourceTree = "<group>";
+		};
+		CAECAEE3228C5F9100D2E901 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				CAF54BB422821B2A00320193 /* any */,
+				CAF54BAC2281EB6600320193 /* htoi */,
+				CAED776A227F63D900EE9D0B /* CommentsCleaner */,
+				CAED7762227F5C9100EE9D0B /* LineFolder */,
+				CAED775E227F124000EE9D0B /* entab */,
+				CACA2FAE226D138F004AC791 /* grabline */,
+				CACA2FAD226D1370004AC791 /* detab */,
+				CAECAEE4228C5F9A00D2E901 /* lower.h */,
+				CAF54BB0228215F800320193 /* deleeze */,
+				CAECAEE5228C5F9A00D2E901 /* lower.c */,
+			);
+			path = strings;
+			sourceTree = "<group>";
+		};
+		CAECAEE7228C643800D2E901 /* array */ = {
+			isa = PBXGroup;
+			children = (
+				CAECAEE8228C64BD00D2E901 /* binsearch */,
+				CACA2FAC226D1362004AC791 /* arraymanipulation */,
+				CAF1247D22761AF100405274 /* ArrayReduce */,
+			);
+			path = array;
+			sourceTree = "<group>";
+		};
+		CAECAEE8228C64BD00D2E901 /* binsearch */ = {
+			isa = PBXGroup;
+			children = (
+				CAECAEE9228C64C800D2E901 /* binsearch.h */,
+				CAECAEEA228C64C800D2E901 /* binsearch.c */,
+			);
+			path = binsearch;
+			sourceTree = "<group>";
+		};
 		CAED775E227F124000EE9D0B /* entab */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,15 +204,6 @@
 			path = LineFolder;
 			sourceTree = "<group>";
 		};
-		CAED7766227F5F2B00EE9D0B /* NotEmptyChar */ = {
-			isa = PBXGroup;
-			children = (
-				CAED7767227F5F4B00EE9D0B /* nonBlankChar.h */,
-				CAED7768227F5F4B00EE9D0B /* nonBlankChar.c */,
-			);
-			path = NotEmptyChar;
-			sourceTree = "<group>";
-		};
 		CAED776A227F63D900EE9D0B /* CommentsCleaner */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,13 +213,6 @@
 			path = CommentsCleaner;
 			sourceTree = "<group>";
 		};
-		CAED776E227F6C8500EE9D0B /* ReadFile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReadFile;
-			sourceTree = "<group>";
-		};
 		CAF1247D22761AF100405274 /* ArrayReduce */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,15 +220,6 @@
 				CAF1247F22761AFD00405274 /* arrayReduce.c */,
 			);
 			path = ArrayReduce;
-			sourceTree = "<group>";
-		};
-		CAF54BA822809E0C00320193 /* TypeRange */ = {
-			isa = PBXGroup;
-			children = (
-				CAF54BA922809E3000320193 /* typeRange.h */,
-				CAF54BAA22809E3000320193 /* typeRange.c */,
-			);
-			path = TypeRange;
 			sourceTree = "<group>";
 		};
 		CAF54BAC2281EB6600320193 /* htoi */ = {
@@ -282,17 +305,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAED7769227F5F4B00EE9D0B /* nonBlankChar.c in Sources */,
-				CAF54BAB22809E3000320193 /* typeRange.c in Sources */,
 				CAED7761227F125000EE9D0B /* entab.c in Sources */,
+				CAECAEE2228C5C5300D2E901 /* bitcount.c in Sources */,
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
+				CAECAEE6228C5F9A00D2E901 /* lower.c in Sources */,
 				CAF54BB722821B3100320193 /* any.c in Sources */,
 				CAF54BB32282160A00320193 /* deleeze.c in Sources */,
+				CAECAEEB228C64C800D2E901 /* binsearch.c in Sources */,
 				CAF54BAF2281EB7100320193 /* htoi.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
+				CAECAEDC228B4ABB00D2E901 /* setbits.c in Sources */,
 				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,
 				CAED776D227F63EC00EE9D0B /* cleanComments.c in Sources */,
 				CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */,
+				CAECAEDF228B4E5700D2E901 /* invert.c in Sources */,
 				CAF1248022761AFD00405274 /* arrayReduce.c in Sources */,
 				CAED7765227F5CA200EE9D0B /* foldLine.c in Sources */,
 			);

@@ -7,9 +7,12 @@
 //
 
 #include "foldLine.h"
-#include "../NotEmptyChar/nonBlankChar.h"
 #include <stdlib.h>
 #define LINE_LENGTH 10
+
+int isBlankChar(char c) {
+    return c == ' ' || c == '\t';
+}
 
 char *foldLine(char input[]) {
     char *output = (char*)malloc(sizeof(char) * 1000);
