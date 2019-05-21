@@ -10,6 +10,8 @@
 		CA41506221F4E7260037E3F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506121F4E7260037E3F5 /* main.c */; };
 		CA41506A21F4E7720037E3F5 /* detab.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506921F4E7720037E3F5 /* detab.c */; };
 		CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */; };
+		CA57BE6F2294744800122399 /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = CA57BE6E2294744800122399 /* escape.c */; };
+		CA57BE732294818800122399 /* expand.c in Sources */ = {isa = PBXBuildFile; fileRef = CA57BE722294818800122399 /* expand.c */; };
 		CACA2FB1226D1399004AC791 /* grabline.c in Sources */ = {isa = PBXBuildFile; fileRef = CACA2FB0226D1399004AC791 /* grabline.c */; };
 		CAECAEDC228B4ABB00D2E901 /* setbits.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDB228B4ABB00D2E901 /* setbits.c */; };
 		CAECAEDF228B4E5700D2E901 /* invert.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDE228B4E5700D2E901 /* invert.c */; };
@@ -44,6 +46,10 @@
 		CA41506921F4E7720037E3F5 /* detab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = detab.c; sourceTree = "<group>"; };
 		CA41506B21F4F2C10037E3F5 /* arraymanipulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arraymanipulation.h; sourceTree = "<group>"; };
 		CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arraymanipulation.c; sourceTree = "<group>"; };
+		CA57BE6D2294744800122399 /* escape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = escape.h; sourceTree = "<group>"; };
+		CA57BE6E2294744800122399 /* escape.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = escape.c; sourceTree = "<group>"; };
+		CA57BE712294818800122399 /* expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = expand.h; sourceTree = "<group>"; };
+		CA57BE722294818800122399 /* expand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = expand.c; sourceTree = "<group>"; };
 		CACA2FAF226D1399004AC791 /* grabline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grabline.h; sourceTree = "<group>"; };
 		CACA2FB0226D1399004AC791 /* grabline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grabline.c; sourceTree = "<group>"; };
 		CAECAEDA228B4ABB00D2E901 /* setbits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setbits.h; sourceTree = "<group>"; };
@@ -83,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA36793D229185E80097BF7E /* lower */ = {
+			isa = PBXGroup;
+			children = (
+				CAECAEE4228C5F9A00D2E901 /* lower.h */,
+				CAECAEE5228C5F9A00D2E901 /* lower.c */,
+			);
+			path = lower;
+			sourceTree = "<group>";
+		};
 		CA41505521F4E7260037E3F5 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +123,24 @@
 				CA41506121F4E7260037E3F5 /* main.c */,
 			);
 			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		CA57BE6C2294743E00122399 /* escape */ = {
+			isa = PBXGroup;
+			children = (
+				CA57BE6D2294744800122399 /* escape.h */,
+				CA57BE6E2294744800122399 /* escape.c */,
+			);
+			path = escape;
+			sourceTree = "<group>";
+		};
+		CA57BE702294817B00122399 /* expand */ = {
+			isa = PBXGroup;
+			children = (
+				CA57BE712294818800122399 /* expand.h */,
+				CA57BE722294818800122399 /* expand.c */,
+			);
+			path = expand;
 			sourceTree = "<group>";
 		};
 		CACA2FAC226D1362004AC791 /* arraymanipulation */ = {
@@ -153,6 +186,8 @@
 		CAECAEE3228C5F9100D2E901 /* strings */ = {
 			isa = PBXGroup;
 			children = (
+				CA57BE702294817B00122399 /* expand */,
+				CA57BE6C2294743E00122399 /* escape */,
 				CAF54BB422821B2A00320193 /* any */,
 				CAF54BAC2281EB6600320193 /* htoi */,
 				CAED776A227F63D900EE9D0B /* CommentsCleaner */,
@@ -160,9 +195,8 @@
 				CAED775E227F124000EE9D0B /* entab */,
 				CACA2FAE226D138F004AC791 /* grabline */,
 				CACA2FAD226D1370004AC791 /* detab */,
-				CAECAEE4228C5F9A00D2E901 /* lower.h */,
+				CA36793D229185E80097BF7E /* lower */,
 				CAF54BB0228215F800320193 /* deleeze */,
-				CAECAEE5228C5F9A00D2E901 /* lower.c */,
 			);
 			path = strings;
 			sourceTree = "<group>";
@@ -310,9 +344,11 @@
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
 				CAECAEE6228C5F9A00D2E901 /* lower.c in Sources */,
 				CAF54BB722821B3100320193 /* any.c in Sources */,
+				CA57BE6F2294744800122399 /* escape.c in Sources */,
 				CAF54BB32282160A00320193 /* deleeze.c in Sources */,
 				CAECAEEB228C64C800D2E901 /* binsearch.c in Sources */,
 				CAF54BAF2281EB7100320193 /* htoi.c in Sources */,
+				CA57BE732294818800122399 /* expand.c in Sources */,
 				CA41506221F4E7260037E3F5 /* main.c in Sources */,
 				CAECAEDC228B4ABB00D2E901 /* setbits.c in Sources */,
 				CACA2FB1226D1399004AC791 /* grabline.c in Sources */,
