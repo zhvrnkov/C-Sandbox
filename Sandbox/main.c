@@ -1,12 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "strings/expand/expand.h"
+#include "strings/improved_atof/improved_atof.h"
 
 int main(int argc, char *argv[]) {
-    char s1[] = "7-9";
-    char s2[50];
+    printf("%f\n", improved_atof("12.3e1"));
     
-    expand(s1, s2);
-    
-    printf("%s\n", s2);
+    return 0;
 }

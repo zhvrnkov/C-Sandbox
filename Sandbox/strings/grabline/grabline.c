@@ -12,14 +12,13 @@ int grabline(char output[], int lim) {
     int i, c;
     i = c = 0;
     
-    while (i < lim - 1 && (c = getchar()) != EOF) {
-        output[i] = c;
-        i++;
-        if (c == '\n')
-            break;
-    }
+    while (--lim > 0 && (c = getchar()) != EOF && c != '\n')
+        output[i++] = c;
 
+    if (c == '\n')
+        output[i++] = c;
+    
     output[i] = '\0';
     
-    return c;
+    return i;
 }

@@ -13,4 +13,5 @@
 
 #endif /* any_h */
 
-int any(char s1[], char s2[]);
+int any(char s[], char t[]);
+int rightmostany(char s[], char t[]);

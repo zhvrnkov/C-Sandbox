@@ -8,33 +8,30 @@
 
 #include "any.h"
 
-int any(char s1[], char s2[]) {
-    int result, i;
+int any(char s[], char t[]) {
+    int i, j, k;
     
-    result = -1;
-    
-    for (i = 0; s1[i] != '\0'; i++) {
-        if (s1[i] == s2[0]) {
-            int j = 1;
-            int n = i;
-            n++;
-            int contain = 0;
-            result = i;
-            
-            while (s1[n] == s2[j] || s2[j] == '\0') {
-                if (s2[j] == '\0') {
-                    contain = 1;
-                    break;
-                }
-                n++; j++;
-            }
-            
-            if (contain)
-                break;
-            else
-                result = -1;
+    for (i = 0; s[i] != '\0'; i++) {
+        for (j = i, k = 0; t[k] != '\0' && s[j] == t[k]; j++, k++)
+            ;
+        if (k > 0 && t[k] == '\0') {
+            return i;
         }
     }
+    return -1;
+}
+
+int rightmostany(char s[], char t[]) {
+    int i, j, k, index;
     
-    return result;
+    index = -1;
+    
+    for (i = 0; s[i] != '\0'; i++) {
+        for (j = i, k = 0; t[k] != '\0' && s[j] == t[k]; j++, k++)
+            ;
+        if (k > 0 && t[k] == '\0') {
+            index = i;
+        }
+    }
+    return index;
 }

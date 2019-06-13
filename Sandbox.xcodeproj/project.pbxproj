@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0DBC0922B2BDEB005BAA4B /* improved_atof.c in Sources */ = {isa = PBXBuildFile; fileRef = CA0DBC0822B2BDEB005BAA4B /* improved_atof.c */; };
+		CA19680C2299C0CA00AAA3A6 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = CA19680B2299C0CA00AAA3A6 /* reverse.c */; };
 		CA41506221F4E7260037E3F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506121F4E7260037E3F5 /* main.c */; };
 		CA41506A21F4E7720037E3F5 /* detab.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506921F4E7720037E3F5 /* detab.c */; };
 		CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = CA41506C21F4F2C10037E3F5 /* arraymanipulation.c */; };
 		CA57BE6F2294744800122399 /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = CA57BE6E2294744800122399 /* escape.c */; };
 		CA57BE732294818800122399 /* expand.c in Sources */ = {isa = PBXBuildFile; fileRef = CA57BE722294818800122399 /* expand.c */; };
+		CAB72AA3229DAAC700799B98 /* itob.c in Sources */ = {isa = PBXBuildFile; fileRef = CAB72AA2229DAAC700799B98 /* itob.c */; };
 		CACA2FB1226D1399004AC791 /* grabline.c in Sources */ = {isa = PBXBuildFile; fileRef = CACA2FB0226D1399004AC791 /* grabline.c */; };
 		CAECAEDC228B4ABB00D2E901 /* setbits.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDB228B4ABB00D2E901 /* setbits.c */; };
 		CAECAEDF228B4E5700D2E901 /* invert.c in Sources */ = {isa = PBXBuildFile; fileRef = CAECAEDE228B4E5700D2E901 /* invert.c */; };
@@ -40,6 +43,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA0DBC0722B2BDEB005BAA4B /* improved_atof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = improved_atof.h; sourceTree = "<group>"; };
+		CA0DBC0822B2BDEB005BAA4B /* improved_atof.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = improved_atof.c; sourceTree = "<group>"; };
+		CA19680A2299C0CA00AAA3A6 /* reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverse.h; sourceTree = "<group>"; };
+		CA19680B2299C0CA00AAA3A6 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 		CA41505E21F4E7260037E3F5 /* Sandbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sandbox; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA41506121F4E7260037E3F5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CA41506821F4E7720037E3F5 /* detab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detab.h; sourceTree = "<group>"; };
@@ -50,6 +57,8 @@
 		CA57BE6E2294744800122399 /* escape.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = escape.c; sourceTree = "<group>"; };
 		CA57BE712294818800122399 /* expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = expand.h; sourceTree = "<group>"; };
 		CA57BE722294818800122399 /* expand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = expand.c; sourceTree = "<group>"; };
+		CAB72AA1229DAAC700799B98 /* itob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = itob.h; sourceTree = "<group>"; };
+		CAB72AA2229DAAC700799B98 /* itob.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = itob.c; sourceTree = "<group>"; };
 		CACA2FAF226D1399004AC791 /* grabline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grabline.h; sourceTree = "<group>"; };
 		CACA2FB0226D1399004AC791 /* grabline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grabline.c; sourceTree = "<group>"; };
 		CAECAEDA228B4ABB00D2E901 /* setbits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setbits.h; sourceTree = "<group>"; };
@@ -89,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0DBC0622B2BDD5005BAA4B /* improved_atof */ = {
+			isa = PBXGroup;
+			children = (
+				CA0DBC0722B2BDEB005BAA4B /* improved_atof.h */,
+				CA0DBC0822B2BDEB005BAA4B /* improved_atof.c */,
+			);
+			path = improved_atof;
+			sourceTree = "<group>";
+		};
+		CA1968092299C0BE00AAA3A6 /* reverse */ = {
+			isa = PBXGroup;
+			children = (
+				CA19680A2299C0CA00AAA3A6 /* reverse.h */,
+				CA19680B2299C0CA00AAA3A6 /* reverse.c */,
+			);
+			path = reverse;
+			sourceTree = "<group>";
+		};
 		CA36793D229185E80097BF7E /* lower */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +170,15 @@
 			path = expand;
 			sourceTree = "<group>";
 		};
+		CAB72AA0229DAABD00799B98 /* itob */ = {
+			isa = PBXGroup;
+			children = (
+				CAB72AA1229DAAC700799B98 /* itob.h */,
+				CAB72AA2229DAAC700799B98 /* itob.c */,
+			);
+			path = itob;
+			sourceTree = "<group>";
+		};
 		CACA2FAC226D1362004AC791 /* arraymanipulation */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +222,9 @@
 		CAECAEE3228C5F9100D2E901 /* strings */ = {
 			isa = PBXGroup;
 			children = (
+				CA0DBC0622B2BDD5005BAA4B /* improved_atof */,
+				CAB72AA0229DAABD00799B98 /* itob */,
+				CA1968092299C0BE00AAA3A6 /* reverse */,
 				CA57BE702294817B00122399 /* expand */,
 				CA57BE6C2294743E00122399 /* escape */,
 				CAF54BB422821B2A00320193 /* any */,
@@ -344,8 +383,10 @@
 				CA41506A21F4E7720037E3F5 /* detab.c in Sources */,
 				CAECAEE6228C5F9A00D2E901 /* lower.c in Sources */,
 				CAF54BB722821B3100320193 /* any.c in Sources */,
+				CAB72AA3229DAAC700799B98 /* itob.c in Sources */,
 				CA57BE6F2294744800122399 /* escape.c in Sources */,
 				CAF54BB32282160A00320193 /* deleeze.c in Sources */,
+				CA19680C2299C0CA00AAA3A6 /* reverse.c in Sources */,
 				CAECAEEB228C64C800D2E901 /* binsearch.c in Sources */,
 				CAF54BAF2281EB7100320193 /* htoi.c in Sources */,
 				CA57BE732294818800122399 /* expand.c in Sources */,
@@ -356,6 +397,7 @@
 				CA41506D21F4F2C10037E3F5 /* arraymanipulation.c in Sources */,
 				CAECAEDF228B4E5700D2E901 /* invert.c in Sources */,
 				CAF1248022761AFD00405274 /* arrayReduce.c in Sources */,
+				CA0DBC0922B2BDEB005BAA4B /* improved_atof.c in Sources */,
 				CAED7765227F5CA200EE9D0B /* foldLine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
